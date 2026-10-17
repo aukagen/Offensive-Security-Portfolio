@@ -35,8 +35,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "09f192e8-0c5f-45cc-bd55-42bf3cd88539",
             "zIndex": -1,
+            "id": "09f192e8-0c5f-45cc-bd55-42bf3cd88539",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -74,21 +74,15 @@
             "labels": [
               "Trust Boundary"
             ],
-            "id": "d8a79de8-344b-4dc7-b0b7-2688c430bc66",
+            "id": "f0975c87-c13d-401f-91ff-c9fe2f651fac",
             "source": {
-              "x": 660,
-              "y": -720
+              "x": 280,
+              "y": -590
             },
             "target": {
-              "x": 690,
-              "y": -480
-            },
-            "vertices": [
-              {
-                "x": 700,
-                "y": -700
-              }
-            ]
+              "x": 540,
+              "y": -590
+            }
           },
           {
             "shape": "trust-boundary-curve",
@@ -108,24 +102,14 @@
             "labels": [
               "Trust Boundary"
             ],
-            "id": "f0975c87-c13d-401f-91ff-c9fe2f651fac",
+            "id": "57a02b58-66fa-4bcb-af66-5a99cd4ba466",
             "source": {
-              "x": 280,
-              "y": -590
+              "x": 873,
+              "y": -740
             },
             "target": {
-              "x": 540,
-              "y": -590
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
+              "x": 900,
+              "y": -480
             }
           },
           {
@@ -152,6 +136,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -235,7 +220,6 @@
               ]
             },
             "id": "25cebf9d-bf0b-46ed-bbc3-445f8fdfcfea",
-            "zIndex": 1,
             "data": {
               "type": "tm.Store",
               "name": "NAND Flash",
@@ -276,6 +260,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -359,7 +344,6 @@
               ]
             },
             "id": "5033949c-e77a-4e8f-a519-669af09c7e10",
-            "zIndex": 5,
             "data": {
               "type": "tm.Store",
               "name": "Micro SD",
@@ -400,6 +384,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 7,
             "ports": {
               "groups": {
                 "top": {
@@ -483,7 +468,6 @@
               ]
             },
             "id": "f2c80d15-813d-4309-ad5f-43d25e6f250b",
-            "zIndex": 7,
             "data": {
               "type": "tm.Process",
               "name": "OBC/MPU",
@@ -521,6 +505,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 8,
             "ports": {
               "groups": {
                 "top": {
@@ -604,7 +589,6 @@
               ]
             },
             "id": "20aedb8c-2c78-41d1-9be5-f8e2cb380e67",
-            "zIndex": 8,
             "data": {
               "type": "tm.Process",
               "name": "Radio",
@@ -641,6 +625,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 9,
             "ports": {
               "groups": {
                 "top": {
@@ -724,7 +709,6 @@
               ]
             },
             "id": "d8261169-9f0a-43ff-bb8e-426be16efc86",
-            "zIndex": 9,
             "data": {
               "type": "tm.Process",
               "name": "Power \nSystem \n(EPS)",
@@ -761,6 +745,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 10,
             "ports": {
               "groups": {
                 "top": {
@@ -844,7 +829,6 @@
               ]
             },
             "id": "cb0c78e5-a238-42b8-a4b3-10fb94dc3872",
-            "zIndex": 10,
             "data": {
               "type": "tm.Process",
               "name": "Payload",
@@ -993,6 +977,7 @@
               "Data Flow"
             ],
             "id": "2cc563c4-3491-4f31-8bd0-fe3af62a70fc",
+            "parent": "5033949c-e77a-4e8f-a519-669af09c7e10",
             "source": {
               "cell": "5033949c-e77a-4e8f-a519-669af09c7e10",
               "port": "16102cb6-6a9c-46dc-b110-b030f6ff33fa"
@@ -1001,8 +986,7 @@
               "cell": "5033949c-e77a-4e8f-a519-669af09c7e10",
               "port": "16102cb6-6a9c-46dc-b110-b030f6ff33fa"
             },
-            "vertices": [],
-            "parent": "5033949c-e77a-4e8f-a519-669af09c7e10"
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -1151,16 +1135,6 @@
               "cell": "08f7282e-90b6-4c59-b6c1-bae74acd0b82",
               "port": "9450db42-c2fd-4d47-a039-8888d9f177fd"
             },
-            "vertices": [
-              {
-                "x": 1110,
-                "y": -640
-              },
-              {
-                "x": 1150,
-                "y": -640
-              }
-            ],
             "tools": {
               "items": [
                 "boundary",
@@ -1265,7 +1239,17 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": 1110,
+                "y": -640
+              },
+              {
+                "x": 1150,
+                "y": -640
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1305,13 +1289,111 @@
             ],
             "id": "f2a506ab-4faf-4187-898a-ec7abe020d0a",
             "source": {
-              "x": 850,
-              "y": -660
+              "cell": "871b4664-1f89-4a04-8824-d037aeb364a6",
+              "port": "6e722551-6948-4134-876a-4963c576d6df"
             },
             "target": {
-              "x": 950,
-              "y": -560
+              "cell": "825535ed-d279-4a08-ba62-de8c8cb3746a",
+              "port": "9450db42-c2fd-4d47-a039-8888d9f177fd"
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "d1dba796-9069-4ea4-bd63-e7407046c5c4",
+            "source": {
+              "x": 650,
+              "y": -630
+            },
+            "target": {
+              "cell": "871b4664-1f89-4a04-8824-d037aeb364a6",
+              "port": "97919414-824d-438a-8e37-f90705a4b042"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "ab24a96d-7fa1-47ee-92db-7dc183944601",
+            "source": {
+              "x": 1330,
+              "y": -520
+            },
+            "target": {
+              "cell": "08f7282e-90b6-4c59-b6c1-bae74acd0b82",
+              "port": "7c738d8d-bafe-44e6-95c8-782ab4b9d363"
+            },
+            "vertices": [
+              {
+                "x": 1390,
+                "y": -550
+              }
+            ]
           },
           {
             "position": {
@@ -1334,6 +1416,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1417,7 +1500,6 @@
               ]
             },
             "id": "825535ed-d279-4a08-ba62-de8c8cb3746a",
-            "zIndex": 11,
             "data": {
               "type": "tm.Actor",
               "name": "Ground Station",
@@ -1451,6 +1533,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1534,127 +1617,9 @@
               ]
             },
             "id": "08f7282e-90b6-4c59-b6c1-bae74acd0b82",
-            "zIndex": 12,
             "data": {
               "type": "tm.Actor",
               "name": "Mission Control",
-              "description": "",
-              "isTrustBoundary": false,
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "providesAuthentication": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 750,
-              "y": -580
-            },
-            "size": {
-              "width": 140,
-              "height": 50
-            },
-            "attrs": {
-              "text": {
-                "text": "SW Upload Service"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "3f127308-c1b6-4105-89c2-163649e586e3"
-                },
-                {
-                  "group": "right",
-                  "id": "7c738d8d-bafe-44e6-95c8-782ab4b9d363"
-                },
-                {
-                  "group": "bottom",
-                  "id": "5f604c3b-9e89-46b2-a637-41d8b6ec9bd6"
-                },
-                {
-                  "group": "left",
-                  "id": "9450db42-c2fd-4d47-a039-8888d9f177fd"
-                }
-              ]
-            },
-            "id": "4b2bf721-a0c6-46a8-83e5-5cdb57290842",
-            "zIndex": 13,
-            "data": {
-              "type": "tm.Actor",
-              "name": "SW Upload Service",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -1712,8 +1677,8 @@
           },
           {
             "position": {
-              "x": 800,
-              "y": -679.9999999999997
+              "x": 760,
+              "y": -660
             },
             "size": {
               "width": 60,
@@ -1731,6 +1696,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -1814,10 +1780,129 @@
               ]
             },
             "id": "871b4664-1f89-4a04-8824-d037aeb364a6",
-            "zIndex": 15,
             "data": {
               "type": "tm.Process",
               "name": "RF Link",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1265,
+              "y": -550
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "SW Uplink Service"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "b481561c-3ebd-4710-855f-2cfd2dfb99b5"
+                },
+                {
+                  "group": "right",
+                  "id": "0f0538f1-d589-4a4e-8072-192f4517646a"
+                },
+                {
+                  "group": "bottom",
+                  "id": "45f7aa19-9695-4f25-aa2c-b28e4f53305b"
+                },
+                {
+                  "group": "left",
+                  "id": "8e8b3bcb-268d-491e-9c8d-11f3f281cc7b"
+                }
+              ]
+            },
+            "id": "632019bf-aa23-4167-a22e-51589ec0b67e",
+            "zIndex": 16,
+            "data": {
+              "type": "tm.Process",
+              "name": "SW Uplink Service",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1835,6 +1920,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "me§",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
