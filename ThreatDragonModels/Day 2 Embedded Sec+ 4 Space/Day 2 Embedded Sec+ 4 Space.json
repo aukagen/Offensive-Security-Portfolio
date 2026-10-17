@@ -1,0 +1,28 @@
+{
+  "version": "2.6.2",
+  "release_version": "1",
+  "released_at": "2026-10-17",
+  "summary": {
+    "title": "Day 2 Embedded Sec+ 4 Space",
+    "owner": "me",
+    "description": "Cubesat mission - open sources (UPSat; OBC, radio, power system, ground station)",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "cubesat one",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": []
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "me§",
+    "threatTop": 0
+  }
+}
